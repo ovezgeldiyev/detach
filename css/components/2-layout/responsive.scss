@@ -1,0 +1,165 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+    // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+    @include hero-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+    @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    h3 {
+        font-size: 55px;
+    }
+    h4 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    h5 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    @include header-xlg-xxlg;
+    @include hero-xlg-xxlg;
+    @include service-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    h3 {
+        font-size: 45px;
+        letter-spacing: 5px;
+    }
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
+    @include hero-lg-xlg;
+    @include intro-lg-xlg;
+    @include sidebar-lg-xlg;
+    @include service-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+    h2 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @include hero-md-lg;
+    @include intro-md-lg;
+
+}
+// 750px
+@include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    @include hero-sm-md;
+    @include intro-sm-md;
+    @include service-sm-md;
+
+}
+// 650px
+@include sm-md-extra {
+    @include hero-sm-md-extra;
+}
+// 540px
+@include xsm-sm  {
+    h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    h3 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .button {
+        padding: 12px 35px;
+    }
+    .signUp {
+        &__inner {
+            padding: 20px;
+            border-radius: 10px;
+            &-logo {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 25px;
+                span {
+                    width: 45px;
+                    margin-right: 12px;
+                }
+            }
+            &-socials {
+                a {
+                    padding: 11px;
+                }
+            }
+            p {
+                &.center {
+                    padding: 15px 0;
+                }
+                &.big {
+                    margin-top: 18px;
+                }
+                &.link {
+                    margin-top: 5px;
+                }
+            }
+            .input {
+                margin-bottom: 15px;
+                input {
+                    padding: 11px 16px;
+                }
+            }
+        }
+    }
+    @include hero-xsm-sm;
+    @include intro-xsm-sm;
+    @include service-xsm-sm;
+
+}
+

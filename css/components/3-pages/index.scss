@@ -1,0 +1,289 @@
+.hero {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 70px 0 100px;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 13px;
+            border-radius: 20px;
+            background-color: $gray;
+            content: "";
+        }
+        &-col {
+            width: calc(50% - 18px);
+            max-width: 506px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &.sm {
+                max-width: 460px;
+            }
+        }
+        &-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 467px;
+            margin: 50px 0 0 0;
+            &.sm {
+                max-width: 380px;
+                margin: 0 0 60px 0;
+                align-self: center;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// 1380px
+@mixin hero-xxxlg-xxxxlg {
+    .hero {
+
+    }
+}
+// 1250px
+@mixin hero-xlg-xxlg-extra {
+    .hero {
+
+    }
+}
+// 1180px
+@mixin hero-xlg-xxlg {
+    .hero {
+        &__inner {
+            padding: 50px 0 80px;
+            &-image {
+                margin: 30px 0 0 0;
+                &.sm {
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+    }
+}
+// 1024px
+@mixin hero-lg-xlg {
+    .hero {
+
+    }
+}
+// 930px
+@mixin hero-md-lg {
+    .hero {
+        &__inner {
+            padding: 60px 0;
+            &::before {
+                height: 9px;
+            }
+            &-col {
+                width: calc(50% - 12px);
+            }
+        }
+    }
+}
+// 750px
+@mixin hero-sm-md {
+    .hero {
+        &__inner {
+            flex-direction: column;
+            padding: 40px 0 60px;
+            &-col {
+                width: 100%;
+                max-width: unset;
+                margin-bottom: 36px;
+                &.sm {
+                    max-width: unset;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            &-image {
+                margin: 0;
+                &.sm {
+                    width: 85%;
+                    margin: 0;
+                }
+            }
+            h2 {
+                order: -1;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+// 650px
+@mixin hero-sm-md-extra {
+    .hero {
+
+    }
+}
+// 540px
+@mixin hero-xsm-sm {
+    .hero {
+        &__inner {
+            padding: 30px 0 40px;
+            &::before {
+                height: 6px;
+            }
+        }
+    }
+}
+.intro {
+    padding-bottom: 120px;
+    &__inner {
+        position: relative;
+        padding: 50px 0 120px;
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 13px;
+            border-radius: 20px;
+            background-color: $gray;
+            content: "";
+        }
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            min-height: 300px;
+        }
+        &-col {
+            width: calc(38% - 10px);
+            display: flex;
+            align-items: flex-start;
+            &:last-child {
+                width: calc(24% - 10px);
+            }
+        }
+        .customSelect {
+            margin-top: 5px;
+        }
+        h1 {
+            margin-bottom: 60px;
+        }
+        h3 {
+            margin-right: 10px;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    }
+}
+// 1024px
+@mixin intro-lg-xlg {
+    .intro {
+        padding-bottom: 90px;
+        &__inner {
+            padding: 35px 0 90px;
+            h1 {
+                margin-bottom: 40px;
+            }
+            .button {
+                margin: 0;
+            }
+            .customSelect {
+                margin: 0;
+            }
+        }
+    }
+}
+// 930px
+@mixin intro-md-lg {
+    .intro {
+        padding-bottom: 60px;
+        &__inner {
+            padding: 30px 0 70px;
+            &::before {
+                height: 9px;
+            }
+            &-row {
+                flex-wrap: wrap;
+                min-height: unset;
+            }
+            &-col {
+                width: calc(50% - 10px);
+                max-width: 360px;
+                &:last-child {
+                    width: 100%;
+                    max-width: unset;
+                }
+            }
+            .customSelect {
+                min-height: 280px;
+            }
+            h3 {
+                margin-right: 5px;
+            }
+        }
+ 
+    }
+}
+// 750px
+@mixin intro-sm-md {
+    .intro {
+        padding-bottom: 40px;
+        &__inner {
+            padding: 30px 0 50px;
+            &-row {
+                flex-direction: column;
+
+            }
+            &-col {
+                width: 100%;
+                max-width: unset;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            .customSelect {
+                width: calc(100% - 50px);
+                min-height: unset;
+            }
+            h3 {
+                width: 50px;
+                margin-top: 5px;
+            }
+            h1 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// 540px
+@mixin intro-xsm-sm {
+    .intro {
+        &__inner {
+            padding: 30px 0 40px;
+            &::before {
+                height: 6px;
+            }
+            &-col {
+                margin-bottom: 20px;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            .customSelect {
+                width: calc(100% - 35px);
+                min-height: unset;
+                max-width: unset;
+            }
+            h3 {
+                width: 35px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
